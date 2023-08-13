@@ -1,0 +1,56 @@
+.lesson-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.day {
+    flex-basis: 18%;
+}
+
+.lesson-list {
+    list-style: none;
+    padding: 0;
+}
+
+.lesson-list li {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.lesson-list li:nth-child(odd):hover {
+    background-color: #33f58a;
+}
+
+.lesson-list li:nth-child(even):hover {
+    background-color: #ee7bf8;
+}
+
+.lesson-list li:first-child {
+    background-color: #33f58a;
+}
+
+.lesson-list li:last-child {
+    background-color: #ee7bf8;
+}
+
+.lesson-list li:only-child {
+    background-color: #ffccff;
+}
+
+.lesson-list li:first-of-type {
+    font-weight: bold;
+}
+
+.lesson-list li:last-of-type {
+    font-style: italic;
+}
+
+.lesson-list li:nth-of-type(3n) {
+    text-decoration: line-through;
+}
+
+.lesson-list li:nth-last-of-type(2) {
+    transform: rotate(-5deg);
+}
